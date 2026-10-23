@@ -52,8 +52,10 @@ function onBook(id: number) {
 
 <template>
   <header>
-    <h1>Campus Events</h1>
-    <p>{{ bookingText }}</p>
+    <div class="container">
+      <h1>Campus Events</h1>
+      <p>{{ bookingText }}</p>
+    </div>
   </header>
   <main>
     <EventList :events="events" @book="onBook" />

@@ -35,7 +35,7 @@ const almostFull = computed(() => left.value >= 1 && left.value <= 5)
       :disabled="isFull" 
       @click="emit('book', event.id)"
     >
-      Book
+      Book a seat
     </button>
   </article>
 </template>

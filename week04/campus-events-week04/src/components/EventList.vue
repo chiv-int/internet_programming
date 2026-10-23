@@ -33,10 +33,10 @@ const visible = computed(() => {
       <input 
         v-model="search" 
         type="text" 
-        placeholder="Search events..." 
+        placeholder="Search title or location" 
       />
       <select v-model="category">
-        <option value="all">All</option>
+        <option value="all">All categories</option>
         <option value="talk">Talk</option>
         <option value="workshop">Workshop</option>
         <option value="social">Social</option>
@@ -54,6 +54,6 @@ const visible = computed(() => {
         @book="emit('book', $event)" 
       />
     </div>
-    <p v-else class="empty">No events match</p>
+    <p v-else class="empty">No events match your search.</p>
   </div>
 </template>
